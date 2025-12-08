@@ -19,8 +19,8 @@ export function Benefits() {
       icon: Heart,
       title: t.benefits.healing,
       description: t.benefits.healingDesc,
-      color: "text-accent",
-      bgColor: "bg-accent/10",
+      color: "text-purple-900",
+      bgColor: "bg-purple-900/10",
     },
     {
       icon: Sparkles,

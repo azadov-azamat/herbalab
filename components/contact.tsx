@@ -10,7 +10,7 @@ export function Contact() {
   const { t } = useLanguage()
 
   return (
-    <section id="aloqa" className="py-16 md:py-24 bg-gradient-to-br from-primary/5 via-background to-accent/5">
+    <section id="contact" className="py-16 md:py-24 bg-linear-to-br from-primary/5 via-background to-accent/5">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-balance">{t.contact.title}</h2>
@@ -26,7 +26,7 @@ export function Contact() {
                   <Phone size={24} className="text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-1">{t.contact.phone}</h3>
+                  {/* <h3 className="font-semibold mb-1">{t.contact.phone}</h3> */}
                   <a href="tel:+998943746667" className="text-primary hover:underline block">
                     +998 94 374 66 67
                   </a>
@@ -39,16 +39,16 @@ export function Contact() {
 
             <Card className="p-6 hover:shadow-lg transition-all">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center">
-                  <Instagram size={24} className="text-accent" />
+                <div className="w-12 h-12 rounded-full bg-purple-900/10 flex items-center justify-center">
+                  <Instagram size={24} className="text-purple-900" />
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-1">{t.contact.instagram}</h3>
+                  {/* <h3 className="font-semibold mb-1">{t.contact.instagram}</h3> */}
                   <a
                     href="https://instagram.com/herbalab_uzb_corp"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-accent hover:underline"
+                    className="text-purple-900 hover:underline"
                   >
                     @herbalab_uzb_corp
                   </a>
@@ -56,7 +56,7 @@ export function Contact() {
               </div>
             </Card>
 
-            <Card className="p-6 hover:shadow-lg transition-all">
+            {/* <Card className="p-6 hover:shadow-lg transition-all">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center">
                   <MessageCircle size={24} className="text-secondary" />
@@ -66,13 +66,13 @@ export function Contact() {
                   <p className="text-muted-foreground">Herbalab Pharm</p>
                 </div>
               </div>
-            </Card>
+            </Card> */}
 
             <div className="pt-4">
               <Button size="lg" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
                 <a href="tel:+998943746667" className="flex items-center gap-2">
                   <Phone size={20} />
-                  {t.locale === "uz" ? "Hozir qo'ng'iroq qiling" : t.locale === "ru" ? "Позвоните сейчас" : "Call Now"}
+                  {t.contact.callNow}
                 </a>
               </Button>
             </div>
@@ -82,7 +82,7 @@ export function Contact() {
           <div className="flex justify-center">
             <Card className="p-6 max-w-sm">
               <h3 className="text-xl font-bold mb-4 text-center">
-                {t.locale === "uz" ? "Instagram QR kod" : t.locale === "ru" ? "Instagram QR код" : "Instagram QR Code"}
+                {t.contact.instagramQrCode}
               </h3>
               <Image
                 src="/images/img-20251207-183948-214.jpg"
@@ -92,11 +92,7 @@ export function Contact() {
                 className="w-full h-auto rounded-lg"
               />
               <p className="text-sm text-muted-foreground text-center mt-4">
-                {t.locale === "uz"
-                  ? "QR kodni skanerlang va bizni kuzatib boring"
-                  : t.locale === "ru"
-                    ? "Отсканируйте QR-код и следите за нами"
-                    : "Scan the QR code and follow us"}
+                {t.contact.qrScanInstruction}
               </p>
             </Card>
           </div>

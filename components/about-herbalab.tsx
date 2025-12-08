@@ -10,105 +10,50 @@ export function AboutHerbalab() {
   const advantages = [
     {
       icon: Microscope,
-      text:
-        t.locale === "uz"
-          ? "Zamonaviy ishlab chiqarish texnologiyalari"
-          : t.locale === "ru"
-            ? "Современные производственные технологии"
-            : "Modern production technologies",
+      text: t.about.modernProduction,
     },
     {
       icon: Target,
-      text:
-        t.locale === "uz"
-          ? "Ilmiy asoslangan formulalar"
-          : t.locale === "ru"
-            ? "Научно обоснованные формулы"
-            : "Scientifically based formulas",
+      text: t.about.scientificallyBacked,
     },
     {
       icon: Shield,
-      text:
-        t.locale === "uz"
-          ? "O'z laboratoriya sifat nazorati"
-          : t.locale === "ru"
-            ? "Собственный лабораторный контроль качества"
-            : "Own laboratory quality control",
+      text: t.about.laboratoryQuality,
     },
     {
       icon: Sparkles,
-      text:
-        t.locale === "uz"
-          ? "Tabiiy va xavfsiz tarkibiy qismlar"
-          : t.locale === "ru"
-            ? "Натуральные и безопасные компоненты"
-            : "Natural and safe ingredients",
+      text: t.about.naturalSafe,
     },
     {
       icon: Award,
-      text:
-        t.locale === "uz"
-          ? "Yuqori standartli ishlab chiqarish"
-          : t.locale === "ru"
-            ? "Производство высокого стандарта"
-            : "High standard production",
+      text: t.about.highStandardProduction,
     },
     {
       icon: CheckCircle2,
-      text:
-        t.locale === "uz"
-          ? "Haqiqiy natija beradigan mahsulotlar"
-          : t.locale === "ru"
-            ? "Продукты, дающие реальные результаты"
-            : "Products that give real results",
+      text: t.about.productsThatGiveResults,
     },
   ]
 
   const values = [
     {
-      title: t.locale === "uz" ? "Sifat" : t.locale === "ru" ? "Качество" : "Quality",
-      description:
-        t.locale === "uz"
-          ? "Sertifikatlangan, xavfsiz xom ashyo"
-          : t.locale === "ru"
-            ? "Сертифицированное, безопасное сырье"
-            : "Certified, safe raw materials",
+      title: t.about.quality,
+      description: t.about.certifiedSafeRawMaterials,
     },
     {
-      title: t.locale === "uz" ? "Ishonch" : t.locale === "ru" ? "Доверие" : "Trust",
-      description:
-        t.locale === "uz"
-          ? "Har bir formula ilmiy asoslangan"
-          : t.locale === "ru"
-            ? "Каждая формула научно обоснована"
-            : "Each formula is scientifically based",
+      title: t.about.trust,
+      description: t.about.scientificallyBased
     },
     {
-      title: t.locale === "uz" ? "Samaradorlik" : t.locale === "ru" ? "Эффективность" : "Effectiveness",
-      description:
-        t.locale === "uz"
-          ? "O'lchanadigan haqiqiy natijalar"
-          : t.locale === "ru"
-            ? "Измеримые реальные результаты"
-            : "Measurable real results",
+      title: t.about.effectiveness,
+      description: t.about.measurableResults,
     },
     {
-      title: t.locale === "uz" ? "Tabiilik" : t.locale === "ru" ? "Натуральность" : "Natural",
-      description:
-        t.locale === "uz"
-          ? "Zararsiz tarkibiy qismlar"
-          : t.locale === "ru"
-            ? "Безвредные компоненты"
-            : "Harmless ingredients",
+      title: t.about.natural,
+      description: t.about.harmlessIngredients,
     },
     {
-      title: t.locale === "uz" ? "Innovatsiya" : t.locale === "ru" ? "Инновация" : "Innovation",
-      description:
-        t.locale === "uz"
-          ? "Zamonaviy ilmiy yondashuv"
-          : t.locale === "ru"
-            ? "Современный научный подход"
-            : "Modern scientific approach",
+      title: t.about.innovation,
+      description: t.about.cuttingEdgeSolutions,
     },
   ]
 
@@ -122,9 +67,9 @@ export function AboutHerbalab() {
 
         <div className="max-w-6xl mx-auto space-y-12">
           {/* Mission */}
-          <Card className="p-8 bg-gradient-to-br from-primary/10 to-accent/10 border-2 border-primary/20">
+          <Card className="p-8 bg-linear-to-br from-primary/10 to-accent/10 border-2 border-primary/20">
             <h3 className="text-2xl font-bold mb-4 text-primary">
-              {t.locale === "uz" ? "Bizning missiyamiz" : t.locale === "ru" ? "Наша миссия" : "Our Mission"}
+              {t.about.ourMission}
             </h3>
             <p className="text-lg text-foreground/80 leading-relaxed text-pretty">{t.about.description}</p>
           </Card>
@@ -132,11 +77,7 @@ export function AboutHerbalab() {
           {/* Advantages */}
           <div>
             <h3 className="text-2xl font-bold mb-6 text-center">
-              {t.locale === "uz"
-                ? "HERBALAB afzalliklari"
-                : t.locale === "ru"
-                  ? "Преимущества HERBALAB"
-                  : "HERBALAB Advantages"}
+              {t.about.advantures}
             </h3>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {advantages.map((advantage, index) => {
@@ -158,7 +99,7 @@ export function AboutHerbalab() {
           {/* Values */}
           <div>
             <h3 className="text-2xl font-bold mb-6 text-center">
-              {t.locale === "uz" ? "Bizning qadriyatlarimiz" : t.locale === "ru" ? "Наши ценности" : "Our Values"}
+              {t.about.values}
             </h3>
             <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
               {values.map((value, index) => (

@@ -9,12 +9,12 @@ export function Hero() {
   const { t } = useLanguage()
 
   return (
-    <section className="relative pt-24 md:pt-32 pb-16 md:pb-24 overflow-hidden bg-gradient-to-br from-background via-accent/5 to-background">
+    <section className="relative pt-24 md:pt-32 pb-16 md:pb-24 overflow-hidden bg-linear-to-br from-background via-accent/5 to-background">
       {/* Background decorative elements */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5" />
+      <div className="absolute inset-0 bg-linear-to-br from-primary/5 via-background to-accent/5" />
       <div className="absolute top-20 right-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float" />
       <div
-        className="absolute bottom-20 left-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float"
+        className="absolute bottom-20 left-10 w-96 h-96 bg-purple-900/10 rounded-full blur-3xl animate-float"
         style={{ animationDelay: "1s" }}
       />
 
@@ -23,15 +23,15 @@ export function Hero() {
           {/* Left Content */}
           <div className="space-y-6 md:space-y-8 animate-fade-in-up">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/20 rounded-full text-accent text-sm font-medium mb-8">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-purple-900/20 rounded-full text-purple-900 text-sm font-medium mb-8">
               <Leaf size={16} />
               <span>{t.hero.badge}</span>
             </div>
 
             {/* Main Heading */}
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-              <span className="text-accent">{t.hero.title1}</span> <span className="text-primary">{t.hero.title2}</span>{" "}
-              <span className="text-accent">{t.hero.title3}</span>
+              <span className="text-purple-900">{t.hero.title1}</span> <span className="text-primary">{t.hero.title2}</span>{" "}
+              <span className="text-purple-900">{t.hero.title3}</span>
             </h1>
 
             {/* Subtitle */}
@@ -50,15 +50,15 @@ export function Hero() {
             {/* Trust Indicators */}
             <div className="flex flex-wrap gap-6">
               <div className="flex items-center gap-2 text-foreground">
-                <Check size={20} className="text-accent" />
+                <Check size={20} className="text-purple-900" />
                 <span className="font-medium">{t.hero.natural}</span>
               </div>
               <div className="flex items-center gap-2 text-foreground">
-                <Check size={20} className="text-accent" />
+                <Check size={20} className="text-purple-900" />
                 <span className="font-medium">{t.hero.scientific}</span>
               </div>
               <div className="flex items-center gap-2 text-foreground">
-                <Check size={20} className="text-accent" />
+                <Check size={20} className="text-purple-900" />
                 <span className="font-medium">{t.hero.capsules}</span>
               </div>
             </div>

@@ -11,26 +11,21 @@ export function Ingredients() {
     {
       icon: Sparkles,
       name: t.ingredients.myoInositol,
-      dosage: "1000-2000 mg/" + (t.locale === "uz" ? "kun" : t.locale === "ru" ? "день" : "day"),
+      dosage: t.ingredients.usageDay,
       benefits: [t.ingredients.myoDesc],
       color: "primary",
     },
     {
       icon: Leaf,
       name: t.ingredients.dChiro,
-      dosage:
-        t.locale === "uz"
-          ? "Myo-inozitol bilan 40:1 nisbatda"
-          : t.locale === "ru"
-            ? "В соотношении 40:1 с мио-инозитолом"
-            : "40:1 ratio with myo-inositol",
+      dosage: t.ingredients.ratio40to1,
       benefits: [t.ingredients.dChiroDesc],
-      color: "accent",
+      color: "purple-900",
     },
     {
       icon: Shield,
       name: t.ingredients.metafolin,
-      dosage: t.locale === "uz" ? "Faol shakli" : t.locale === "ru" ? "Активная форма" : "Active form",
+      dosage: t.ingredients.activeForm,
       benefits: [t.ingredients.metafolinDesc],
       color: "secondary",
     },
@@ -52,23 +47,23 @@ export function Ingredients() {
             const colorClass =
               ingredient.color === "primary"
                 ? "text-primary bg-primary/10 border-primary/20"
-                : ingredient.color === "accent"
-                  ? "text-accent bg-accent/10 border-accent/20"
+                : ingredient.color === "purple-900"
+                  ? "text-purple-900 bg-purple-900/10 border-purple-900/20"
                   : "text-secondary bg-secondary/10 border-secondary/20"
 
             return (
               <Card key={index} className={`p-6 border-2 hover:shadow-xl transition-all duration-300 ${colorClass}`}>
                 <div className="mb-6">
                   <div
-                    className={`w-16 h-16 rounded-2xl ${ingredient.color === "primary" ? "bg-primary/20" : ingredient.color === "accent" ? "bg-accent/20" : "bg-secondary/20"} flex items-center justify-center mb-4`}
+                    className={`w-16 h-16 rounded-2xl ${ingredient.color === "primary" ? "bg-primary/20" : ingredient.color === "purple-900" ? "bg-purple-900/20" : "bg-secondary/20"} flex items-center justify-center mb-4`}
                   >
                     <Icon
                       size={32}
                       className={
                         ingredient.color === "primary"
                           ? "text-primary"
-                          : ingredient.color === "accent"
-                            ? "text-accent"
+                          : ingredient.color === "purple-900"
+                            ? "text-purple-900"
                             : "text-secondary"
                       }
                     />
@@ -79,17 +74,13 @@ export function Ingredients() {
 
                 <div className="space-y-3">
                   <h4 className="font-semibold text-sm">
-                    {t.locale === "uz"
-                      ? "Asosiy foydalari:"
-                      : t.locale === "ru"
-                        ? "Основные преимущества:"
-                        : "Key benefits:"}
+                    {t.ingredients.mainBenefit}
                   </h4>
                   <ul className="space-y-2">
                     {ingredient.benefits.map((benefit, idx) => (
                       <li key={idx} className="flex items-start gap-2 text-sm text-foreground/80">
                         <span
-                          className={`mt-1.5 w-1.5 h-1.5 rounded-full shrink-0 ${ingredient.color === "primary" ? "bg-primary" : ingredient.color === "accent" ? "bg-accent" : "bg-secondary"}`}
+                          className={`mt-1.5 w-1.5 h-1.5 rounded-full shrink-0 ${ingredient.color === "primary" ? "bg-primary" : ingredient.color === "purple-900" ? "bg-purple-900" : "bg-secondary"}`}
                         />
                         <span className="leading-relaxed">{benefit}</span>
                       </li>

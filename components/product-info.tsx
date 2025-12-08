@@ -32,67 +32,55 @@ export function ProductInfo() {
           <div className="space-y-6 order-1 md:order-2">
             <Card className="p-6 bg-card border-2 border-primary/20">
               <h3 className="text-xl font-bold mb-4 text-primary">
-                {t.locale === "uz"
-                  ? "Tarkibi (1 kapsula)"
-                  : t.locale === "ru"
-                    ? "Состав (1 капсула)"
-                    : "Content (1 capsule)"}
+                {t.product.content1}
               </h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="text-primary mt-1 shrink-0" size={20} />
                   <div>
                     <span className="font-semibold">
-                      Myo-{t.locale === "uz" ? "inozitol" : t.locale === "ru" ? "инозитол" : "inositol"}
+                      {t.product.inositol}
                     </span>
-                    <span className="text-muted-foreground"> — 487,5 {t.locale === "uz" ? "mg" : "мг"}</span>
+                    <span className="text-muted-foreground"> — {t.product.inositolMg}</span>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="text-primary mt-1 shrink-0" size={20} />
                   <div>
                     <span className="font-semibold">
-                      D-{t.locale === "uz" ? "xiro-inozitol" : t.locale === "ru" ? "хиро-инозитол" : "chiro-inositol"}
+                      {t.product.dChiroInositol}
                     </span>
-                    <span className="text-muted-foreground"> — 12,5 {t.locale === "uz" ? "mg" : "мг"}</span>
+                    <span className="text-muted-foreground"> — {t.product.dChiroInositolMg}</span>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="text-primary mt-1 shrink-0" size={20} />
                   <div>
-                    <span className="font-semibold">Metafolin®</span>
+                    <span className="font-semibold">{t.product.metafolin}</span>
                     <span className="text-muted-foreground">
                       {" "}
-                      — 200 {t.locale === "uz" ? "mkg" : t.locale === "ru" ? "мкг" : "mcg"}
+                      — {t.product.metafolinMg}
                     </span>
                   </div>
                 </li>
               </ul>
             </Card>
 
-            <Card className="p-6 bg-accent/5 border-accent/20">
-              <h4 className="font-semibold mb-3 text-accent">
-                {t.locale === "uz" ? "Qabul qilish usuli:" : t.locale === "ru" ? "Способ приема:" : "How to take:"}
+            <Card className="p-6 bg-purple-900/5 border-purple-900/20">
+              <h4 className="font-semibold mb-3 text-purple-900">
+                {t.product.howToTake}
               </h4>
               <p className="text-foreground/80 leading-relaxed">
-                {t.locale === "uz"
-                  ? "Kuniga 2 kapsula — sog'lom ritmga qayting!"
-                  : t.locale === "ru"
-                    ? "2 капсулы в день — вернитесь к здоровому ритму!"
-                    : "2 capsules per day — return to a healthy rhythm!"}
+                {t.product.perday2Capsules}
               </p>
             </Card>
 
             <Card className="p-6 bg-secondary/5 border-secondary/20">
               <h4 className="font-semibold mb-3 text-secondary">
-                {t.locale === "uz" ? "Qadoq:" : t.locale === "ru" ? "Упаковка:" : "Package:"}
+                {t.product.package}
               </h4>
               <p className="text-foreground/80 leading-relaxed">
-                {t.locale === "uz"
-                  ? "60 kapsula — 30 kunlik kurs"
-                  : t.locale === "ru"
-                    ? "60 капсул — курс на 30 дней"
-                    : "60 capsules — 30-day course"}
+                {t.product.packageDetails}
               </p>
             </Card>
           </div>

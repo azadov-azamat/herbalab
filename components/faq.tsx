@@ -27,10 +27,10 @@ export function FAQ() {
       question: t.faq.q5,
       answer: t.faq.a5,
     },
-    {
-      question: t.faq.q6,
-      answer: t.faq.a6,
-    },
+    // {
+    //   question: t.faq.q6,
+    //   answer: t.faq.a6,
+    // },
   ]
 
   return (
@@ -39,11 +39,7 @@ export function FAQ() {
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-balance">{t.faq.title}</h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-            {t.locale === "uz"
-              ? "INOZET MD haqida bilishingiz kerak bo'lgan barcha ma'lumotlar"
-              : t.locale === "ru"
-                ? "Вся информация, которую вам нужно знать о INOZET MD"
-                : "All the information you need to know about INOZET MD"}
+            {t.faq.allInformationYouNeed}
           </p>
         </div>
 

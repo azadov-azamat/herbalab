@@ -1,6 +1,6 @@
 "use client"
 
-import { Heart } from "lucide-react"
+import { Heart, Instagram, Phone } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
 
 export function Footer() {
@@ -17,40 +17,32 @@ export function Footer() {
               <span className="text-destructive">MD</span>
             </div>
             <p className="text-sm text-muted-foreground mb-4">
-              {t.locale === "uz"
-                ? "HERBALAB tomonidan ishlab chiqilgan"
-                : t.locale === "ru"
-                  ? "Произведено HERBALAB"
-                  : "Produced by HERBALAB"}
+              {t.footer.productHerbalab}
             </p>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              {t.locale === "uz"
-                ? "Ayollar reproduktiv salomatligini qo'llab-quvvatlash uchun tabiiy va samarali yechim"
-                : t.locale === "ru"
-                  ? "Натуральное и эффективное решение для поддержки репродуктивного здоровья женщин"
-                  : "Natural and effective solution for supporting women's reproductive health"}
+              {t.footer.description}
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
             <h3 className="font-semibold mb-4">
-              {t.locale === "uz" ? "Tezkor havolalar" : t.locale === "ru" ? "Быстрые ссылки" : "Quick Links"}
+              {t.footer.quickLinks}
             </h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <a href="#mahsulot" className="text-muted-foreground hover:text-primary transition-colors">
-                  {t.locale === "uz" ? "Mahsulot haqida" : t.locale === "ru" ? "О продукте" : "About Product"}
+                  {t.nav.product}
                 </a>
               </li>
               <li>
                 <a href="#afzalliklar" className="text-muted-foreground hover:text-primary transition-colors">
-                  {t.locale === "uz" ? "Afzalliklar" : t.locale === "ru" ? "Преимущества" : "Benefits"}
+                  {t.nav.benefits}
                 </a>
               </li>
               <li>
                 <a href="#tarkib" className="text-muted-foreground hover:text-primary transition-colors">
-                  {t.locale === "uz" ? "Tarkibi" : t.locale === "ru" ? "Состав" : "Ingredients"}
+                  {t.nav.ingredients}
                 </a>
               </li>
               <li>
@@ -60,7 +52,7 @@ export function Footer() {
               </li>
               <li>
                 <a href="#faq" className="text-muted-foreground hover:text-primary transition-colors">
-                  {t.locale === "uz" ? "Savollar" : t.locale === "ru" ? "Вопросы" : "FAQ"}
+                  {t.nav.faq}
                 </a>
               </li>
             </ul>
@@ -69,28 +61,28 @@ export function Footer() {
           {/* Contact */}
           <div>
             <h3 className="font-semibold mb-4">
-              {t.locale === "uz" ? "Aloqa" : t.locale === "ru" ? "Контакты" : "Contact"}
+              {t.nav.contact}
             </h3>
             <ul className="space-y-2 text-sm">
-              <li className="text-muted-foreground">
-                {t.locale === "uz" ? "Tel" : t.locale === "ru" ? "Тел" : "Tel"}:{" "}
+              <li className="flex space-x-2 text-muted-foreground items-center">
+                <Phone size={16} className="text-primary" />
                 <a href="tel:+998943746667" className="text-primary hover:underline">
                   +998 94 374 66 67
                 </a>
               </li>
-              <li className="text-muted-foreground">
-                {t.locale === "uz" ? "Tel" : t.locale === "ru" ? "Тел" : "Tel"}:{" "}
+              <li className="flex space-x-2 text-muted-foreground items-center">
+                <Phone size={16} className="text-primary" />
                 <a href="tel:+998998807498" className="text-primary hover:underline">
                   +998 99 880 74 98
                 </a>
               </li>
-              <li className="text-muted-foreground">
-                Instagram:{" "}
+              <li className="text-muted-foreground flex space-x-2 items-center">
+                <Instagram size={16} className="text-purple-900" />
                 <a
                   href="https://instagram.com/herbalab_uzb_corp"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-accent hover:underline"
+                  className="text-purple-900 hover:underline"
                 >
                   @herbalab_uzb_corp
                 </a>
@@ -103,11 +95,6 @@ export function Footer() {
         <div className="pt-8 border-t border-border text-center">
           <p className="text-sm text-muted-foreground flex items-center justify-center gap-2 flex-wrap">
             <span>{t.footer.copyright}</span>
-            <span className="flex items-center gap-1">
-              {t.locale === "uz" ? "Ishlab chiqildi" : t.locale === "ru" ? "Разработано" : "Made"}{" "}
-              <Heart size={14} className="text-destructive fill-destructive" />{" "}
-              {t.locale === "uz" ? "bilan" : t.locale === "ru" ? "с" : "with"}
-            </span>
           </p>
           <p className="text-xs text-muted-foreground mt-2">{t.contact.manufacturerName}</p>
         </div>

@@ -44,19 +44,19 @@ export function HowItWorks() {
               </ul>
             </div>
 
-            <div className="p-6 bg-accent/5 rounded-2xl border-2 border-accent/20">
-              <h3 className="text-xl font-bold mb-4 text-accent">{t.howItWorks.dChiroTitle}</h3>
+            <div className="p-6 bg-purple-900/5 rounded-2xl border-2 border-purple-900/20">
+              <h3 className="text-xl font-bold mb-4 text-purple-900">{t.howItWorks.dChiroTitle}</h3>
               <ul className="space-y-3 text-foreground/80">
                 <li className="flex items-start gap-3">
-                  <span className="text-accent font-bold">1.</span>
+                  <span className="text-purple-900 font-bold">1.</span>
                   <span>{t.howItWorks.dChiroStep1}</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-accent font-bold">2.</span>
+                  <span className="text-purple-900 font-bold">2.</span>
                   <span>{t.howItWorks.dChiroStep2}</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-accent font-bold">3.</span>
+                  <span className="text-purple-900 font-bold">3.</span>
                   <span>{t.howItWorks.dChiroStep3}</span>
                 </li>
               </ul>
