@@ -13,7 +13,7 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div className="text-2xl font-bold mb-2">
-              <span className="text-secondary">INOZET</span>
+              <span className="text-secondary">INOZET </span>
               <span className="text-destructive">MD</span>
             </div>
             <p className="text-sm text-muted-foreground mb-4">
