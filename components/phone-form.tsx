@@ -38,7 +38,7 @@ export function PhoneForm() {
   }
 
   return (
-    <section id="phone-form" className="py-16 md:py-24 bg-gradient-to-br from-accent/5 to-primary/5">
+    <section id="phone-form" className="py-16 md:py-24 bg-linear-to-br from-accent/5 to-primary/5">
       <div className="container mx-auto px-4">
         <Card className="max-w-2xl mx-auto border-2 shadow-lg">
           <CardHeader className="text-center">
