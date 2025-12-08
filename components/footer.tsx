@@ -1,6 +1,6 @@
 "use client"
 
-import { Heart, Instagram, Phone } from "lucide-react"
+import { Instagram, Phone } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
 
 export function Footer() {
@@ -16,19 +16,13 @@ export function Footer() {
               <span className="text-secondary">INOZET </span>
               <span className="text-destructive">MD</span>
             </div>
-            <p className="text-sm text-muted-foreground mb-4">
-              {t.footer.productHerbalab}
-            </p>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              {t.footer.description}
-            </p>
+            <p className="text-sm text-muted-foreground mb-4">{t.footer.productHerbalab}</p>
+            <p className="text-sm text-muted-foreground leading-relaxed">{t.footer.description}</p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold mb-4">
-              {t.footer.quickLinks}
-            </h3>
+            <h3 className="font-semibold mb-4">{t.footer.quickLinks}</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <a href="#mahsulot" className="text-muted-foreground hover:text-primary transition-colors">
@@ -60,9 +54,7 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="font-semibold mb-4">
-              {t.nav.contact}
-            </h3>
+            <h3 className="font-semibold mb-4">{t.nav.contact}</h3>
             <ul className="space-y-2 text-sm">
               <li className="flex space-x-2 text-muted-foreground items-center">
                 <Phone size={16} className="text-primary" />
@@ -97,6 +89,7 @@ export function Footer() {
             <span>{t.footer.copyright}</span>
           </p>
           <p className="text-xs text-muted-foreground mt-2">{t.contact.manufacturerName}</p>
+          <p className="text-xs text-muted-foreground mt-3">by Banerma</p>
         </div>
       </div>
     </footer>
