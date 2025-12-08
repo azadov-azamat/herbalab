@@ -1,38 +1,35 @@
 "use client"
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { useLanguage } from "@/lib/language-context"
 
 export function FAQ() {
+  const { t } = useLanguage()
+
   const faqs = [
     {
-      question: "IZOMED qanday qabul qilish kerak?",
-      answer:
-        "IZOMED kuniga 2 kapsula qabul qilish tavsiya etiladi. Eng yaxshi natija olish uchun mahsulotni muntazam ravishda kamida 3 oy davomida qabul qiling. Ovqat bilan birga qabul qilish tavsiya etiladi.",
+      question: t.faq.q1,
+      answer: t.faq.a1,
     },
     {
-      question: "IZOMED qancha vaqtdan keyin ta'sir qila boshlaydi?",
-      answer:
-        "Natijalar odatda 1-3 oy ichida ko'rinadi. Ba'zi ayollarda yaxshilanish dastlabki oylardayoq sezilishi mumkin, lekin to'liq samaradorlik uchun kamida 3 oylik kurs tavsiya etiladi.",
+      question: t.faq.q2,
+      answer: t.faq.a2,
     },
     {
-      question: "IZOMED xavfsizmi?",
-      answer:
-        "Ha, IZOMED tabiiy tarkibiy qismlardan iborat va xavfsizdir. Biroq, homiladorlik yoki emizish davrida, shuningdek, biror kasallik mavjud bo'lganda shifokor bilan maslahatlashish tavsiya etiladi.",
+      question: t.faq.q3,
+      answer: t.faq.a3,
     },
     {
-      question: "IZOMED kimlar uchun mos?",
-      answer:
-        "IZOMED PCOS, hayzli tsikl buzilishlari, insulin qarshiligi, gormonal muvozanatsizlik va homiladorlikka tayyorgarlik ko'rayotgan ayollar uchun mo'ljallangan.",
+      question: t.faq.q4,
+      answer: t.faq.a4,
     },
     {
-      question: "IZOMED bilan boshqa dori-darmonlarni birga qabul qilish mumkinmi?",
-      answer:
-        "Aksariyat hollarda mumkin, lekin doimiy dorilar qabul qilayotgan bo'lsangiz, shifokor bilan maslahatlashish tavsiya etiladi.",
+      question: t.faq.q5,
+      answer: t.faq.a5,
     },
     {
-      question: "IZOMED va oddiy folik kislota o'rtasida qanday farq bor?",
-      answer:
-        "IZOMED tarkibida Metafolin® - folik kislotaning faol shakli mavjud. Bu tanaga darhol so'riladi va MTHFR geni polimorfizmi bo'lgan ayollarda ham samarali ishlaydi.",
+      question: t.faq.q6,
+      answer: t.faq.a6,
     },
   ]
 
@@ -40,11 +37,13 @@ export function FAQ() {
     <section id="faq" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-balance">
-            Tez-tez so'raladigan savollar
-          </h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-balance">{t.faq.title}</h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-            IZOMED haqida bilishingiz kerak bo'lgan barcha ma'lumotlar
+            {t.locale === "uz"
+              ? "INOZET MD haqida bilishingiz kerak bo'lgan barcha ma'lumotlar"
+              : t.locale === "ru"
+                ? "Вся информация, которую вам нужно знать о INOZET MD"
+                : "All the information you need to know about INOZET MD"}
           </p>
         </div>
 

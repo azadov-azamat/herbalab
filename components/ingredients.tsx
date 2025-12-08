@@ -2,43 +2,36 @@
 
 import { Card } from "@/components/ui/card"
 import { Leaf, Sparkles, Shield } from "lucide-react"
+import { useLanguage } from "@/lib/language-context"
 
 export function Ingredients() {
+  const { t } = useLanguage()
+
   const ingredients = [
     {
       icon: Sparkles,
-      name: "Myo-inozitol",
-      dosage: "1000-2000 mg/kun",
-      benefits: [
-        "Tuxumdon hujayralarida insulin sezuvchanligini yaxshilaydi",
-        "Ovulyatsiyani qo'llab-quvvatlaydi, ayniqsa PCOS da",
-        "Hayzli tsiklni tartibga solishga yordam beradi",
-        "Stressni kamaytiradi va asab tizimini qo'llab-quvvatlaydi",
-      ],
+      name: t.ingredients.myoInositol,
+      dosage: "1000-2000 mg/" + (t.locale === "uz" ? "kun" : t.locale === "ru" ? "день" : "day"),
+      benefits: [t.ingredients.myoDesc],
       color: "primary",
     },
     {
       icon: Leaf,
-      name: "D-xiro-inozitol",
-      dosage: "Myo-inozitol bilan 40:1 nisbatda",
-      benefits: [
-        "Glyukoza metabolizmini normallashtirishga yordam beradi",
-        "PCOS da giperandrogenizmni kamaytiradi",
-        "Tuxum hujayrasining sifatini va metabolik jarayonlarni qo'llab-quvvatlaydi",
-        "Insulin qarshiligini kamaytiradi",
-      ],
+      name: t.ingredients.dChiro,
+      dosage:
+        t.locale === "uz"
+          ? "Myo-inozitol bilan 40:1 nisbatda"
+          : t.locale === "ru"
+            ? "В соотношении 40:1 с мио-инозитолом"
+            : "40:1 ratio with myo-inositol",
+      benefits: [t.ingredients.dChiroDesc],
       color: "accent",
     },
     {
       icon: Shield,
-      name: "Metafolin® (5-MTHF)",
-      dosage: "Faol shakli",
-      benefits: [
-        "Folik kislotasining faol, bioqo'rindisi yuqori shakli",
-        "Tanaga darhol so'riladi",
-        "Homila asab nayini nuqsonlar xavfini kamaytiradi",
-        "MTHFR polimorfizmi bo'lgan ayollarda ham samarali",
-      ],
+      name: t.ingredients.metafolin,
+      dosage: t.locale === "uz" ? "Faol shakli" : t.locale === "ru" ? "Активная форма" : "Active form",
+      benefits: [t.ingredients.metafolinDesc],
       color: "secondary",
     },
   ]
@@ -47,11 +40,9 @@ export function Ingredients() {
     <section id="tarkib" className="py-16 md:py-24 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-balance">
-            Tarkibiy qismlar va ularning ta'siri
-          </h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-balance">{t.ingredients.title}</h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-            Har bir komponent ilmiy asoslangan va tabiiy
+            {t.ingredients.subtitle}
           </p>
         </div>
 
@@ -87,7 +78,13 @@ export function Ingredients() {
                 </div>
 
                 <div className="space-y-3">
-                  <h4 className="font-semibold text-sm">Asosiy foydalari:</h4>
+                  <h4 className="font-semibold text-sm">
+                    {t.locale === "uz"
+                      ? "Asosiy foydalari:"
+                      : t.locale === "ru"
+                        ? "Основные преимущества:"
+                        : "Key benefits:"}
+                  </h4>
                   <ul className="space-y-2">
                     {ingredient.benefits.map((benefit, idx) => (
                       <li key={idx} className="flex items-start gap-2 text-sm text-foreground/80">

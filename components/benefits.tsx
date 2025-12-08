@@ -2,34 +2,37 @@
 
 import { Card } from "@/components/ui/card"
 import { Activity, Heart, Sparkles, TrendingUp } from "lucide-react"
+import { useLanguage } from "@/lib/language-context"
 
 export function Benefits() {
+  const { t } = useLanguage()
+
   const benefits = [
     {
       icon: Activity,
-      title: "Hayzli tsiklni normallashtiradi",
-      description: "Menstrual tsiklni tartibga soladi va ovulyatsiyani yaxshilaydi",
+      title: t.benefits.menstrual,
+      description: t.benefits.menstrualDesc,
       color: "text-primary",
       bgColor: "bg-primary/10",
     },
     {
       icon: Heart,
-      title: "Tuxum hujayrasining sifatini yaxshilaydi",
-      description: "Reproduktiv salomatlikni qo'llab-quvvatlaydi va fertilitetni oshiradi",
+      title: t.benefits.healing,
+      description: t.benefits.healingDesc,
       color: "text-accent",
       bgColor: "bg-accent/10",
     },
     {
       icon: Sparkles,
-      title: "Sog'lom bo'lish imkoniyatini oshiradi",
-      description: "Homiladorlik davrini qo'llab-quvvatlaydi va xavflarni kamaytiradi",
+      title: t.benefits.health,
+      description: t.benefits.healthDesc,
       color: "text-secondary",
       bgColor: "bg-secondary/10",
     },
     {
       icon: TrendingUp,
-      title: "Tezroq homilador bo'lishga yordam beradi",
-      description: "PCOS va boshqa muammolar bilan kurashadi",
+      title: t.benefits.pregnancy,
+      description: t.benefits.pregnancyDesc,
       color: "text-primary",
       bgColor: "bg-primary/10",
     },
@@ -39,9 +42,9 @@ export function Benefits() {
     <section id="afzalliklar" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-balance">IZOMED afzalliklari</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-balance">{t.benefits.title}</h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-            Ilmiy tadqiqotlar bilan tasdiqlangan foydalari
+            {t.benefits.subtitle}
           </p>
         </div>
 

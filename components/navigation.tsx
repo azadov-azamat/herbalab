@@ -3,8 +3,11 @@
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import { useLanguage } from "@/lib/language-context"
+import { LanguageSwitcher } from "./language-switcher"
 
 export function Navigation() {
+  const { t } = useLanguage()
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
@@ -17,12 +20,12 @@ export function Navigation() {
   }, [])
 
   const navLinks = [
-    { href: "#mahsulot", label: "Mahsulot" },
-    { href: "#afzalliklar", label: "Afzalliklar" },
-    { href: "#tarkib", label: "Tarkib" },
-    { href: "#herbalab", label: "HERBALAB" },
-    { href: "#faq", label: "Savollar" },
-    { href: "#aloqa", label: "Aloqa" },
+    { href: "#mahsulot", label: t.nav.product },
+    { href: "#afzalliklar", label: t.nav.benefits },
+    { href: "#tarkib", label: t.nav.ingredients },
+    { href: "#herbalab", label: t.nav.about },
+    { href: "#faq", label: t.nav.faq },
+    { href: "#aloqa", label: t.nav.contact },
   ]
 
   return (
@@ -52,8 +55,9 @@ export function Navigation() {
                 {link.label}
               </a>
             ))}
+            <LanguageSwitcher />
             <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
-              <a href="#aloqa">Buyurtma berish</a>
+              <a href="#phone-form">{t.hero.orderButton}</a>
             </Button>
           </div>
 
@@ -77,8 +81,11 @@ export function Navigation() {
                   {link.label}
                 </a>
               ))}
+              <div className="py-2">
+                <LanguageSwitcher />
+              </div>
               <Button className="bg-primary hover:bg-primary/90 text-primary-foreground w-full">
-                <a href="#aloqa">Buyurtma berish</a>
+                <a href="#phone-form">{t.hero.orderButton}</a>
               </Button>
             </div>
           </div>

@@ -6,6 +6,7 @@ import { HowItWorks } from "@/components/how-it-works"
 import { WhenToUse } from "@/components/when-to-use"
 import { AboutHerbalab } from "@/components/about-herbalab"
 import { FAQ } from "@/components/faq"
+import { PhoneForm } from "@/components/phone-form"
 import { Contact } from "@/components/contact"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
@@ -22,6 +23,7 @@ export default function Home() {
       <WhenToUse />
       <AboutHerbalab />
       <FAQ />
+      <PhoneForm />
       <Contact />
       <Footer />
     </main>
