@@ -18,7 +18,7 @@ export const translations = {
       title2: "baxtini",
       title3: "xis eting",
       subtitle:
-        "INOZET MD — ayollar reproduktiv salomatligi, gormonal muvozanat va ovulyatsiya tartibga solish uchun ilmiy asoslangan kombinatsiya.",
+        " — ayollar reproduktiv salomatligi, gormonal muvozanat va ovulyatsiya tartibga solish uchun ilmiy asoslangan kombinatsiya.",
       orderButton: "Buyurtma berish",
       detailsButton: "Batafsil ma'lumot",
       natural: "100% Tabiiy",
@@ -26,7 +26,7 @@ export const translations = {
       capsules: "60 kapsula",
     },
     product: {
-      title: "INOZET MD nima?",
+      title: " - nima?",
       subtitle: "Reproduktiv salomatlik uchun ilmiy asoslangan formula",
       description:
         "INOZET MD — Myo-inositol, D-xiro-inositol va Metafolin kombinatsiyasi. Gormonal muvozanat, reproduktiv salomatlik va PCOS muammolarini hal qilish uchun tabiiy yechim.",
@@ -43,7 +43,7 @@ export const translations = {
       packageDetails: "60 kapsula — 30 kunlik kurs",
     },
     benefits: {
-      title: "INOZET MD afzalliklari",
+      title: "afzalliklari",
       subtitle: "Ayollar salomatligini qo'llab-quvvatlash",
       menstrual: "Menstrual siklni yaxshilaydi",
       menstrualDesc: "Hayzli tsiklni tartibga soladi va muntazamlashtiradi",
@@ -180,7 +180,7 @@ export const translations = {
       title2: "of",
       title3: "motherhood",
       subtitle:
-        "INOZET MD — a scientifically based combination for women's reproductive health, hormonal balance and ovulation regulation.",
+        " — a scientifically based combination for women's reproductive health, hormonal balance and ovulation regulation.",
       orderButton: "Order Now",
       detailsButton: "Learn More",
       natural: "100% Natural",
@@ -188,7 +188,7 @@ export const translations = {
       capsules: "60 capsules",
     },
     product: {
-      title: "What is INOZET MD?",
+      title: " - what is this?",
       subtitle: "Scientifically based formula for reproductive health",
       description:
         "INOZET MD is a combination of Myo-inositol, D-chiro-inositol and Metafolin. A natural solution for hormonal balance, reproductive health and PCOS problems.",
@@ -205,7 +205,7 @@ export const translations = {
       packageDetails: "60 capsules — 30-day course",
     },
     benefits: {
-      title: "INOZET MD Benefits",
+      title: "Benefits",
       subtitle: "Supporting women's health",
       menstrual: "Improves menstrual cycle",
       menstrualDesc: "Regulates and normalizes the menstrual cycle",
@@ -342,7 +342,7 @@ export const translations = {
       title2: "",
       title3: "материнства",
       subtitle:
-        "INOZET MD — научно обоснованная комбинация для женского репродуктивного здоровья, гормонального баланса и регуляции овуляции.",
+        " — научно обоснованная комбинация для женского репродуктивного здоровья, гормонального баланса и регуляции овуляции.",
       orderButton: "Заказать",
       detailsButton: "Подробнее",
       natural: "100% Натуральный",
@@ -350,7 +350,7 @@ export const translations = {
       capsules: "60 капсул",
     },
     product: {
-      title: "Что такое INOZET MD?",
+      title: " - Что такое?",
       subtitle: "Научно обоснованная формула для репродуктивного здоровья",
       description:
         "INOZET MD — это комбинация мио-инозитола, D-хиро-инозитола и метафолина. Натуральное решение для гормонального баланса, репродуктивного здоровья и проблем с СПКЯ.",
@@ -367,7 +367,7 @@ export const translations = {
       packageDetails: "60 капсул — курс на 30 дней",
     },
     benefits: {
-      title: "Преимущества INOZET MD",
+      title: "Преимущества",
       subtitle: "Поддержка женского здоровья",
       menstrual: "Улучшает менструальный цикл",
       menstrualDesc: "Регулирует и нормализует менструальный цикл",

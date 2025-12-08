@@ -11,8 +11,14 @@ export function ProductInfo() {
   return (
     <section id="mahsulot" className="py-16 md:py-24 bg-muted/30">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-balance">{t.product.title}</h2>
+        <div className="flex flex-col justify-center items-center mb-12 md:mb-16">
+          <div className="text-3xl md:text-4xl lg:text-5xl font-bold flex items-start gap-1 mb-1">
+            <div className="flex items-start gap-1">
+              <span className="text-purple-900">INOZET </span>
+              <span className="text-sm px-2 text-white bg-red-500 rounded-3xl">MD</span>
+            </div>
+            {t.product.title}
+          </div>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">{t.product.subtitle}</p>
         </div>
 
@@ -67,7 +73,7 @@ export function ProductInfo() {
             </Card>
 
             <Card className="p-6 bg-purple-900/5 border-purple-900/20">
-              <h4 className="font-semibold mb-3 text-purple-900">
+              <h4 className="font-semibold text-purple-900">
                 {t.product.howToTake}
               </h4>
               <p className="text-foreground/80 leading-relaxed">
@@ -76,7 +82,7 @@ export function ProductInfo() {
             </Card>
 
             <Card className="p-6 bg-secondary/5 border-secondary/20">
-              <h4 className="font-semibold mb-3 text-secondary">
+              <h4 className="font-semibold text-secondary">
                 {t.product.package}
               </h4>
               <p className="text-foreground/80 leading-relaxed">

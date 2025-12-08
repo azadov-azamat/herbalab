@@ -20,12 +20,12 @@ export function Navigation() {
   }, [])
 
   const navLinks = [
-    { href: "#mahsulot", label: t.nav.product },
-    { href: "#afzalliklar", label: t.nav.benefits },
-    { href: "#tarkib", label: t.nav.ingredients },
+    { href: "#product", label: t.nav.product },
+    { href: "#benefits", label: t.nav.benefits },
+    { href: "#ingredients", label: t.nav.ingredients },
     { href: "#herbalab", label: t.nav.about },
     { href: "#faq", label: t.nav.faq },
-    { href: "#aloqa", label: t.nav.contact },
+    { href: "#contact", label: t.nav.contact },
   ]
 
   return (
@@ -36,10 +36,10 @@ export function Navigation() {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <div className="flex items-center gap-2">
-            <div className="text-2xl md:text-3xl font-bold">
-              <span className="text-secondary">INOZET</span>
-              <span className="text-destructive">MD</span>
+          <div className="flex items-end gap-2">
+            <div className="text-2xl font-bold flex items-start gap-1">
+              <span className="text-purple-900">INOZET </span>
+              <span className="text-sm px-2 text-white bg-red-500 rounded-3xl">MD</span>
             </div>
             <span className="text-xs text-muted-foreground hidden md:inline">by HERBALAB</span>
           </div>

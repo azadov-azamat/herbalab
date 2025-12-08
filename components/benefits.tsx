@@ -39,10 +39,16 @@ export function Benefits() {
   ]
 
   return (
-    <section id="afzalliklar" className="py-16 md:py-24">
+    <section id="benefits" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-balance">{t.benefits.title}</h2>
+          <h2 className="flex items-center gap-2 justify-center text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-balance">
+            <div className="font-bold flex items-start gap-1">
+              <span className="text-purple-900">INOZET </span>
+              <span className="text-xl px-2 text-white bg-red-500 rounded-3xl">MD</span>
+            </div>
+            {t.benefits.title}
+          </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
             {t.benefits.subtitle}
           </p>

@@ -12,11 +12,14 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <div className="text-2xl font-bold mb-2">
-              <span className="text-secondary">INOZET </span>
-              <span className="text-destructive">MD</span>
+            <div className="flex items-end gap-2 mb-4">
+              <div className="font-bold flex items-start gap-1">
+                <span className="text-purple-900 text-2xl">INOZET </span>
+                <span className="text-sm px-2 text-white bg-red-500 rounded-3xl">MD</span>
+              </div>
+              <span className="text-xs text-muted-foreground hidden md:inline">by HERBALAB</span>
             </div>
-            <p className="text-sm text-muted-foreground mb-4">{t.footer.productHerbalab}</p>
+            {/* <p className="text-sm text-muted-foreground mb-4">{t.footer.productHerbalab}</p> */}
             <p className="text-sm text-muted-foreground leading-relaxed">{t.footer.description}</p>
           </div>
 
@@ -25,17 +28,17 @@ export function Footer() {
             <h3 className="font-semibold mb-4">{t.footer.quickLinks}</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#mahsulot" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="#product" className="text-muted-foreground hover:text-primary transition-colors">
                   {t.nav.product}
                 </a>
               </li>
               <li>
-                <a href="#afzalliklar" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="#benefits" className="text-muted-foreground hover:text-primary transition-colors">
                   {t.nav.benefits}
                 </a>
               </li>
               <li>
-                <a href="#tarkib" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="#ingredients" className="text-muted-foreground hover:text-primary transition-colors">
                   {t.nav.ingredients}
                 </a>
               </li>

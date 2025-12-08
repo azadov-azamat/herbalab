@@ -35,7 +35,16 @@ export function Hero() {
             </h1>
 
             {/* Subtitle */}
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl leading-relaxed">{t.hero.subtitle}</p>
+            <div className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl leading-relaxed gap-2">
+              <div className="font-bold float-left flex items-start gap-2">
+                <span className="text-purple-900">INOZET </span>
+                <span className="text-sm px-2 text-white bg-red-500 rounded-3xl">MD</span>
+              </div>
+              <p>
+                {t.hero.subtitle}
+              </p>
+               <div className="clear-both"></div>
+            </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -43,7 +52,7 @@ export function Hero() {
                 <a href="#phone-form">{t.hero.orderButton}</a>
               </Button>
               <Button size="lg" variant="outline" className="text-base border-2 bg-transparent">
-                <a href="#mahsulot">{t.hero.detailsButton}</a>
+                <a href="#product">{t.hero.detailsButton}</a>
               </Button>
             </div>
 
