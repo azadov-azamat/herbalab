@@ -1,0 +1,89 @@
+"use client"
+
+import { useState, useEffect } from "react"
+import { Button } from "@/components/ui/button"
+import { Menu, X } from "lucide-react"
+
+export function Navigation() {
+  const [isScrolled, setIsScrolled] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20)
+    }
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
+  const navLinks = [
+    { href: "#mahsulot", label: "Mahsulot" },
+    { href: "#afzalliklar", label: "Afzalliklar" },
+    { href: "#tarkib", label: "Tarkib" },
+    { href: "#herbalab", label: "HERBALAB" },
+    { href: "#faq", label: "Savollar" },
+    { href: "#aloqa", label: "Aloqa" },
+  ]
+
+  return (
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? "bg-background/95 backdrop-blur-md shadow-md" : "bg-transparent"
+      }`}
+    >
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between h-16 md:h-20">
+          <div className="flex items-center gap-2">
+            <div className="text-2xl md:text-3xl font-bold">
+              <span className="text-secondary">INOZET</span>
+              <span className="text-destructive">MD</span>
+            </div>
+            <span className="text-xs text-muted-foreground hidden md:inline">by HERBALAB</span>
+          </div>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center gap-6">
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+              >
+                {link.label}
+              </a>
+            ))}
+            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
+              <a href="#aloqa">Buyurtma berish</a>
+            </Button>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button className="md:hidden text-foreground" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
+
+        {/* Mobile Navigation */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden py-4 border-t border-border">
+            <div className="flex flex-col gap-4">
+              {navLinks.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {link.label}
+                </a>
+              ))}
+              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground w-full">
+                <a href="#aloqa">Buyurtma berish</a>
+              </Button>
+            </div>
+          </div>
+        )}
+      </div>
+    </nav>
+  )
+}
