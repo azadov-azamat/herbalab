@@ -25,7 +25,7 @@ export function Navigation() {
     { href: "#tarkib", label: t.nav.ingredients },
     { href: "#herbalab", label: t.nav.about },
     { href: "#faq", label: t.nav.faq },
-    { href: "#contact", label: t.nav.contact },
+    { href: "#aloqa", label: t.nav.contact },
   ]
 
   return (

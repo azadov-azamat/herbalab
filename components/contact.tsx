@@ -59,7 +59,7 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="py-12 md:py-16 bg-gradient-to-br from-primary/5 via-background to-purple-900/5">
+    <section id="contact" className="py-12 md:py-16 bg-linear-to-br from-primary/5 via-background to-purple-900/5">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 md:mb-12">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2 text-balance">{t.contact.title}</h2>
@@ -74,7 +74,7 @@ export function Contact() {
             <h3 className="text-lg font-semibold mb-3">{t.contact.phone}</h3>
             <Card className="p-4 hover:shadow-md transition-all">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                   <Phone size={20} className="text-primary" />
                 </div>
                 <div className="flex flex-col gap-1">
@@ -90,7 +90,7 @@ export function Contact() {
 
             <Card className="p-4 hover:shadow-md transition-all">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-purple-900/10 flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 rounded-full bg-purple-900/10 flex items-center justify-center shrink-0">
                   <Instagram size={20} className="text-purple-900" />
                 </div>
                 <div>
@@ -109,7 +109,7 @@ export function Contact() {
 
           <div className="md:col-span-2">
             <Card className="p-6 border-2 shadow-md">
-              <h3 className="text-xl font-bold mb-2 text-primary">{t.phoneForm.title}</h3>
+              <h3 className="text-xl font-bold text-primary">{t.phoneForm.title}</h3>
               <p className="text-sm text-muted-foreground mb-4">{t.phoneForm.subtitle}</p>
 
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -163,7 +163,7 @@ export function Contact() {
                     alt="HERBALAB Instagram QR kod"
                     width={120}
                     height={120}
-                    className="rounded-lg flex-shrink-0"
+                    className="rounded-lg shrink-0"
                   />
                   <div>
                     <h4 className="font-semibold mb-1 text-sm">{t.contact.instagramQrCode}</h4>

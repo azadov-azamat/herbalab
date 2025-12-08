@@ -7,7 +7,7 @@ export function Footer() {
   const { t } = useLanguage()
 
   return (
-    <footer className="bg-foreground/5 border-t border-border py-8 md:py-12">
+    <footer className="bg-foreground/5 border-t border-border py-8 md:py-10">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
@@ -89,7 +89,9 @@ export function Footer() {
             <span>{t.footer.copyright}</span>
           </p>
           <p className="text-xs text-muted-foreground mt-2">{t.contact.manufacturerName}</p>
-          <p className="text-xs text-muted-foreground mt-3">by Banerma</p>
+          <p className="text-xs text-muted-foreground mt-3">by {" "}
+            <a href="https://banerma.uz" target="_blank" className="text-primary font-bold">Banerma</a>
+          </p>
         </div>
       </div>
     </footer>
