@@ -63,8 +63,6 @@ export async function sendSMS(phone: string, text: string) {
 
   const cleanedPhone = phone.replace(/\D/g, "")
 
-  console.log("Sending SMS to:", cleanedPhone, "with text:", text);
-
   const res = await fetch("https://notify.eskiz.uz/api/message/sms/send", {
     method: "POST",
     headers: {
@@ -73,7 +71,7 @@ export async function sendSMS(phone: string, text: string) {
       "Accept": "application/json"
     },
     body: JSON.stringify({
-      mobile_phone: cleanedPhone,
+      mobile_phone: '998932052443', // admin phone number for testing
       message: text,
       from: '4546',
     //   callback_url: process.env.ESKIZ_CALLBACK_URL || null
