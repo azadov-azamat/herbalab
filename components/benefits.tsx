@@ -1,5 +1,6 @@
 "use client"
 
+import React from "react"
 import { Card } from "@/components/ui/card"
 import { Activity, Heart, Sparkles, TrendingUp } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"

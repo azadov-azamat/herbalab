@@ -41,22 +41,32 @@ export function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    setStatus("idle")
 
     try {
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1000))
+      const res = await fetch("/api/send-sms", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, phone })
+      })
 
-      setStatus("success")
-      setName("")
-      setPhone("")
+      const data = await res.json()
 
-      // Reset status after 5 seconds
+      if (data.success) {
+        setStatus("success")
+        setName("")
+        setPhone("")
+      } else {
+        setStatus("error")
+      }
+
       setTimeout(() => setStatus("idle"), 5000)
     } catch (error) {
       setStatus("error")
       setTimeout(() => setStatus("idle"), 5000)
     }
   }
+
 
   return (
     <section id="contact" className="py-12 md:py-16 bg-linear-to-br from-primary/5 via-background to-purple-900/5">
