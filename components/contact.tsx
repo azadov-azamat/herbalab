@@ -14,7 +14,7 @@ export function Contact() {
   const { t } = useLanguage()
   const [name, setName] = useState("")
   const [phone, setPhone] = useState("")
-  const [status, setStatus] = useState<"idle" | "success" | "error">("idle")
+  const [status, setStatus] = useState<"idle" | "success" | "error" | "pending">("idle")
 
   const formatPhoneNumber = (value: string) => {
     // Remove all non-digit characters
@@ -41,7 +41,7 @@ export function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setStatus("idle")
+    setStatus("pending")
 
     try {
       const res = await fetch("/api/send-sms", {
@@ -64,7 +64,7 @@ export function Contact() {
     } catch (error) {
       setStatus("error")
       setTimeout(() => setStatus("idle"), 5000)
-    }
+    } 
   }
 
 
@@ -161,7 +161,10 @@ export function Contact() {
                   </div>
                 )}
 
-                <Button type="submit" size="lg" className="w-full h-11">
+                <Button 
+                  disabled={status === "pending" || status === "error"}
+                  type="submit" size="lg" className="w-full h-11"
+                >
                   {t.phoneForm.submit}
                 </Button>
               </form>
