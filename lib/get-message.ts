@@ -9,6 +9,7 @@ interface GetMessageOptions {
 }
 
 export function getMessage({ name, phone, lang = "uz" }: GetMessageOptions): string {
+    return "Bu Eskiz dan test";
   switch (lang) {
     case "ru":
       return (

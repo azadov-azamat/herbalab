@@ -22,7 +22,6 @@ export async function eskizLogin() {
   cachedToken = data.data.token
   tokenExpireTime = Date.now() + data.data.expires * 1000
 
-  console.log("cachedToken", cachedToken, "tokenExpireTime", tokenExpireTime);
   return cachedToken
 }
 
@@ -50,8 +49,6 @@ export async function eskizRefresh() {
 }
 
 async function ensureToken() {
-    console.log("Ensuring token. Cached token:", cachedToken, "Expire time:", tokenExpireTime); 
-
   if (!cachedToken || !tokenExpireTime || Date.now() > tokenExpireTime) {
     return await eskizLogin()
   }
