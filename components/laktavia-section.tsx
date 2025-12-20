@@ -31,7 +31,7 @@ export function LaktaviaSection() {
   ]
 
   return (
-    <section id="laktavia" className="py-20 bg-gradient-to-b from-white to-primary/5">
+    <section id="laktavia-details" className="py-20 bg-gradient-to-b from-white to-primary/5">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-12 animate-fade-in">
@@ -59,6 +59,8 @@ export function LaktaviaSection() {
               width={600}
               height={800}
               className="relative z-10 w-full h-auto rounded-2xl shadow-2xl"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
             />
           </div>
 
@@ -145,6 +147,7 @@ export function LaktaviaSection() {
                 width={500}
                 height={600}
                 className="w-full h-auto rounded-xl shadow-lg"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
           </div>

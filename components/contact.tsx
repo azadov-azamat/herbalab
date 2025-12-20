@@ -47,7 +47,7 @@ export function Contact() {
       const res = await fetch("/api/send-sms", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, phone })
+        body: JSON.stringify({ name, phone }),
       })
 
       const data = await res.json()
@@ -64,9 +64,8 @@ export function Contact() {
     } catch (error) {
       setStatus("error")
       setTimeout(() => setStatus("idle"), 5000)
-    } 
+    }
   }
-
 
   return (
     <section id="contact" className="py-12 md:py-16 bg-linear-to-br from-primary/5 via-background to-purple-900/5">
@@ -161,9 +160,11 @@ export function Contact() {
                   </div>
                 )}
 
-                <Button 
+                <Button
                   disabled={status === "pending" || status === "error"}
-                  type="submit" size="lg" className="w-full h-11"
+                  type="submit"
+                  size="lg"
+                  className="w-full h-11"
                 >
                   {t.phoneForm.submit}
                 </Button>
@@ -177,6 +178,7 @@ export function Contact() {
                     width={120}
                     height={120}
                     className="rounded-lg shrink-0"
+                    sizes="120px"
                   />
                   <div>
                     <h4 className="font-semibold mb-1 text-sm">{t.contact.instagramQrCode}</h4>

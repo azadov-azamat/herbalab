@@ -8,6 +8,7 @@ export const translations = {
       ingredients: "Tarkibi",
       howItWorks: "Qanday ishlaydi",
       whenToUse: "Qachon ishlatiladi",
+      laktavia: "Laktavia",
       about: "Biz haqimizda",
       faq: "Savollar",
       contact: "Aloqa",
@@ -162,8 +163,21 @@ export const translations = {
       description: "Ayollar reproduktiv salomatligini qo'llab-quvvatlash uchun tabiiy va samarali yechim",
       productHerbalab: "HERBALAB tomonidan ishlab chiqilgan",
     },
-    laktavia: {
+    laktaviaPreview: {
       badge: "HERBALAB mahsuloti",
+      productName: "Laktavia",
+      tagline: "ICHAGINGIZ SOG'LOM HAYOTINGIZ YENGIL!",
+      description:
+        "9 xil tirik bakteriya shtammi, rux va oligosaxaridlar bilan kuchli probiotik kompleks. Ichak mikroflorasini tiklaydi va immunitetni mustahkamlaydi.",
+      keyFeatures: "Asosiy xususiyatlari",
+      feature1: "9 turdagi probiotik + prebiotik + rux kombinatsiyasi",
+      feature2: "Ichak mikroflorasini qayta tiklaydi",
+      feature3: "Immunitetni kuchaytiradi",
+      feature4: "Hazm bo'lish uchun ham mos",
+      learnMore: "Batafsil ma'lumot",
+    },
+    laktavia: {
+      badge: "HERBALAB — Tabiiy va xavfsiz",
       productName: "Laktavia",
       tagline: "ICHAGINGIZ SOG'LOM HAYOTINGIZ YENGIL!",
       description:
@@ -201,6 +215,7 @@ export const translations = {
       ingredients: "Ingredients",
       howItWorks: "How It Works",
       whenToUse: "When to Use",
+      laktavia: "Laktavia",
       about: "About Us",
       faq: "FAQ",
       contact: "Contact",
@@ -355,8 +370,21 @@ export const translations = {
       description: "Natural and effective solution for supporting women's reproductive health",
       productHerbalab: "Produced by HERBALAB",
     },
-    laktavia: {
+    laktaviaPreview: {
       badge: "HERBALAB Product",
+      productName: "Laktavia",
+      tagline: "HEALTHY GUT, EASY LIFE!",
+      description:
+        "Powerful probiotic complex with 9 types of live bacteria strains, zinc and oligosaccharides. Restores intestinal microflora and strengthens immunity.",
+      keyFeatures: "Key Features",
+      feature1: "Combination of 9 types of probiotics + prebiotic + zinc",
+      feature2: "Restores intestinal microflora",
+      feature3: "Strengthens immunity",
+      feature4: "Suitable for all ages",
+      learnMore: "Learn More",
+    },
+    laktavia: {
+      badge: "HERBALAB — Natural and Safe",
       productName: "Laktavia",
       tagline: "HEALTHY GUT, EASY LIFE!",
       description:
@@ -394,6 +422,7 @@ export const translations = {
       ingredients: "Состав",
       howItWorks: "Как работает",
       whenToUse: "Когда использовать",
+      laktavia: "Laktavia",
       about: "О нас",
       faq: "Вопросы",
       contact: "Контакты",
@@ -548,8 +577,21 @@ export const translations = {
       description: "Натуральное и эффективное решение для поддержки репродуктивного здоровья женщин",
       productHerbalab: "Произведено HERBALAB",
     },
-    laktavia: {
+    laktaviaPreview: {
       badge: "Продукт HERBALAB",
+      productName: "Laktavia",
+      tagline: "ЗДОРОВЫЙ КИШЕЧНИК, ЛЕГКАЯ ЖИЗНЬ!",
+      description:
+        "Мощный пробиотический комплекс с 9 типами живых бактериальных штаммов, цинком и олигосахаридами. Восстанавливает микрофлору кишечника и укрепляет иммунитет.",
+      keyFeatures: "Основные характеристики",
+      feature1: "Комбинация 9 видов пробиотиков + пребиотик + цинк",
+      feature2: "Восстанавливает микрофлору кишечника",
+      feature3: "Укрепляет иммунитет",
+      feature4: "Подходит для всех возрастов",
+      learnMore: "Подробнее",
+    },
+    laktavia: {
+      badge: "HERBALAB — Натурально и безопасно",
       productName: "Laktavia",
       tagline: "ЗДОРОВЫЙ КИШЕЧНИК, ЛЕГКАЯ ЖИЗНЬ!",
       description:
