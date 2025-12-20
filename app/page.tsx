@@ -9,6 +9,7 @@ import { FAQ } from "@/components/faq"
 import { Contact } from "@/components/contact"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
+import { LaktaviaSection } from "@/components/laktavia-section"
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Ingredients />
       <HowItWorks />
       <WhenToUse />
+      <LaktaviaSection />
       <AboutHerbalab />
       <FAQ />
       <Contact />
