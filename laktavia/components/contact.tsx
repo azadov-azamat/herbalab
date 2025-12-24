@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input"
 import { Phone, Instagram, User } from "lucide-react"
 import Image from "next/image"
 import { useLanguage } from "@/lib/language-context"
+import { track } from '@vercel/analytics';
 
 export function Contact() {
   const { t } = useLanguage()
@@ -44,6 +45,7 @@ export function Contact() {
     setStatus("pending")
 
     try {
+      track("User fetch: ", {name, phone})
       const res = await fetch("/api/send-sms", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -63,6 +65,7 @@ export function Contact() {
       setTimeout(() => setStatus("idle"), 5000)
     } catch (error) {
       setStatus("error")
+      track("error: " + error)
       setTimeout(() => setStatus("idle"), 5000)
     }
   }
