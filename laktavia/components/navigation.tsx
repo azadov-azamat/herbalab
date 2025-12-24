@@ -25,8 +25,6 @@ export function Navigation() {
   const navLinks = [
     { href: "/#product", label: t.nav.product, isExternal: pathname !== "/" },
     { href: "/#benefits", label: t.nav.benefits, isExternal: pathname !== "/" },
-    { href: "/#ingredients", label: t.nav.ingredients, isExternal: pathname !== "/" },
-    { href: "/laktavia", label: t.nav.laktavia, isPage: true },
     { href: "/#herbalab", label: t.nav.about, isExternal: pathname !== "/" },
     { href: "/#faq", label: t.nav.faq, isExternal: pathname !== "/" },
     { href: "/#contact", label: t.nav.contact, isExternal: pathname !== "/" },
@@ -42,8 +40,8 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16 md:h-20">
           <Link href="/" className="flex items-end gap-2">
             <div className="text-2xl font-bold flex items-start gap-1">
-              <span className="text-purple-900">INOZET </span>
-              <span className="text-sm px-2 text-white bg-red-500 rounded-3xl">MD</span>
+              <span className="text-purple-900">Laktavia </span>
+              {/* <span className="text-sm px-2 text-white bg-red-500 rounded-3xl">MD</span> */}
             </div>
             <span className="text-xs text-muted-foreground hidden md:inline">by HERBALAB</span>
           </Link>
@@ -51,17 +49,6 @@ export function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
             {navLinks.map((link) =>
-              link.isPage ? (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className={`text-sm font-medium transition-colors ${
-                    pathname === link.href ? "text-primary font-semibold" : "text-foreground/80 hover:text-primary"
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              ) : (
                 <a
                   key={link.href}
                   href={link.href}
@@ -69,7 +56,6 @@ export function Navigation() {
                 >
                   {link.label}
                 </a>
-              ),
             )}
             <LanguageSwitcher />
             <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
@@ -88,18 +74,6 @@ export function Navigation() {
           <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) =>
-                link.isPage ? (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className={`text-sm font-medium transition-colors ${
-                      pathname === link.href ? "text-primary font-semibold" : "text-foreground/80 hover:text-primary"
-                    }`}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    {link.label}
-                  </Link>
-                ) : (
                   <a
                     key={link.href}
                     href={link.href}
@@ -108,7 +82,6 @@ export function Navigation() {
                   >
                     {link.label}
                   </a>
-                ),
               )}
               <div className="py-2">
                 <LanguageSwitcher />

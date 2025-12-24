@@ -9,12 +9,11 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "INOZET MD - Gormonal muvozanat va reproduktiv salomatlik uchun",
-  description:
-    "INOZET MD - Myo-inositol, D-xiro-inositol va Metafolin kombinatsiyasi. Gormonal muvozanat, reproduktiv salomatlik va PCOS muammolarini hal qilish uchun tabiiy yechim.",
+  title: "Laktavia - HERBALAB | Ichak va immunitet uchun probiotik",
+  description: "Laktavia - tabiiy probiotik. 9 xil tirik bakteriya shtammi, rux va oligosaxaridlar. Ichak mikroflorasini tiklaydi va immunitetni mustahkamlaydi.",
   generator: "v0.app",
   keywords:
-    "INOZET, HERBALAB, myo-inositol, d-chiro-inositol, metafolin, PCOS, gormonal muvozanat, reproduktiv salomatlik, hayzli tsikl, ovulyatsiya",
+    "Laktavia, HERBALAB, rux, Rux (zn), Oligosaxarid, maltodekstrin, ovqat hazm qilish, Ichak mikroflorasin, Восстанавливает микрофлори, Цинк (Zn), Олигосахарид, мальтодекстрин",
   icons: {
     icon: [
       {

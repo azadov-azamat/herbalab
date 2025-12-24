@@ -14,8 +14,8 @@ export function Footer() {
           <div>
             <div className="flex items-end gap-2 mb-4">
               <div className="font-bold flex items-start gap-1">
-                <span className="text-purple-900 text-2xl">INOZET </span>
-                <span className="text-sm px-2 text-white bg-red-500 rounded-3xl">MD</span>
+                <span className="text-purple-900 text-2xl">Laktavia </span>
+                {/* <span className="text-sm px-2 text-white bg-red-500 rounded-3xl">MD</span> */}
               </div>
               <span className="text-xs text-muted-foreground hidden md:inline">by HERBALAB</span>
             </div>

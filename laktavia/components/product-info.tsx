@@ -4,7 +4,7 @@ import { useLanguage } from "@/lib/language-context"
 import { Leaf, Shield, Heart, Users } from "lucide-react"
 import Image from "next/image"
 
-export function LaktaviaSection() {
+export function ProductInfo() {
   const { t } = useLanguage()
 
   const benefits = [
@@ -31,7 +31,7 @@ export function LaktaviaSection() {
   ]
 
   return (
-    <section id="laktavia-details" className="py-20 bg-gradient-to-b from-white to-primary/5">
+    <section id="product" className="py-20 bg-gradient-to-b from-white to-primary/5">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-12 animate-fade-in">
@@ -93,7 +93,7 @@ export function LaktaviaSection() {
         </div>
 
         {/* Benefits Grid */}
-        <div className="mb-12">
+        <div id="benefits" className="mb-12">
           <h3 className="text-3xl font-bold text-center mb-8 text-purple-900">{t.laktavia.benefitsTitle}</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {benefits.map((benefit, index) => (
