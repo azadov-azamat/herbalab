@@ -43,7 +43,7 @@ export default function RootLayout({
       <body className={`font-sans antialiased`}>
         <LanguageProvider>
           {children}
-          <Analytics />
+          <Analytics debug />
         </LanguageProvider>
       </body>
     </html>
