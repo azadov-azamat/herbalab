@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { LanguageProvider } from "@/lib/language-context"
 import "./globals.css"
 
@@ -45,6 +46,7 @@ export default function RootLayout({
         <LanguageProvider>
           {children}
           <Analytics debug />
+          <SpeedInsights/>
         </LanguageProvider>
       </body>
     </html>
