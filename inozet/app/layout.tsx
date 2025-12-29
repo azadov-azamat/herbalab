@@ -1,13 +1,13 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import { LanguageProvider } from "@/lib/language-context"
-import "./globals.css"
+import type React from "react";
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { LanguageProvider } from "@/lib/language-context";
+import "./globals.css";
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
+const _geist = Geist({ subsets: ["latin"] });
+const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "INOZET MD - Gormonal muvozanat va reproduktiv salomatlik uchun",
@@ -33,12 +33,12 @@ export const metadata: Metadata = {
     ],
     apple: "/apple-icon.png",
   },
-}
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="uz">
@@ -46,9 +46,9 @@ export default function RootLayout({
         <LanguageProvider>
           {children}
           <Analytics debug />
-          <SpeedInsights/>
+          <SpeedInsights />
         </LanguageProvider>
       </body>
     </html>
-  )
+  );
 }

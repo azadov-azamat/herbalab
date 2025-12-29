@@ -1,4 +1,4 @@
-export type Locale = "uz" | "en" | "ru"
+export type Locale = "uz" | "en" | "ru";
 
 export const translations = {
   uz: {
@@ -14,7 +14,7 @@ export const translations = {
     },
     hero: {
       badge: "HERBALAB — Tabiiy va xavfsiz",
-      title1: "Ona bolish",
+      title1: "Ona bo'lish",
       title2: "baxtini",
       title3: "xis eting",
       subtitle:
@@ -48,19 +48,23 @@ export const translations = {
       menstrual: "Menstrual siklni yaxshilaydi",
       menstrualDesc: "Hayzli tsiklni tartibga soladi va muntazamlashtiradi",
       healing: "Tuxum hujayralari sifatini yaxshilaydi",
-      healingDesc: "Reproduktiv hujayra sifatini oshiradi va ovulyatsiyani yaxshilaydi",
-      health: "Sog'lom bola ko'rish imkoniyatubu oshiradi",
+      healingDesc:
+        "Reproduktiv hujayra sifatini oshiradi va ovulyatsiyani yaxshilaydi",
+      health: "Sog'lom bola ko'rish imkoniyatini oshiradi",
       healthDesc: "Homiladorlik jarayonini qo'llab-quvvatlaydi",
       pregnancy: "Tezroq homilador bo'lishga yordam beradi",
-      pregnancyDesc: "Tabiiy yo'l bilan homiladorlikka erishishni osonlashtiradi",
+      pregnancyDesc:
+        "Tabiiy yo'l bilan homiladorlikka erishishni osonlashtiradi",
     },
     ingredients: {
       title: "Tarkibidagi asosiy komponentlar",
       subtitle: "Ilmiy isbotlangan ingredientlar",
       myoInositol: "Myo-inositol",
-      myoDesc: "Follikul-stimullovchi gormon (FSG) ning signalni hujayralarga uzatilishida ishtirok etadi",
+      myoDesc:
+        "Follikul-stimullovchi gormon (FSG) ning signalni hujayralarga uzatilishida ishtirok etadi",
       dChiro: "D-xiro-inositol",
-      dChiroDesc: "Glyukozani mitoxondriyalarga olib boradi va tanani energiya bilan ta'minlashda ishtirok etadi",
+      dChiroDesc:
+        "Glyukozani mitoxondriyalarga olib boradi va tanani energiya bilan ta'minlashda ishtirok etadi",
       metafolin: "Metafolin",
       metafolinDesc: "Steroid gormonlar ishlab chiqarilishini normallashtiradi",
       mainBenefit: "Asosiy foydalari",
@@ -72,12 +76,17 @@ export const translations = {
       title: "Qanday ishlaydi?",
       subtitle: "Ilmiy mexanizm",
       myoTitle: "Myo-inozitol",
-      myoStep1: "Follikul-stimullovchi gormon (FSG)ning signalni hujayralarga uzatilishida ishtirok etadi",
-      myoStep2: "FSG follikulning granular hujayalarini bo'linish va yetilishni jarayonida ishtirok etadi",
-      myoStep3: "FSG follikulning granular hujayalarini bo'linish yetilishini jarayonida ishtirok etadi",
+      myoStep1:
+        "Follikul-stimullovchi gormon (FSG)ning signalni hujayralarga uzatilishida ishtirok etadi",
+      myoStep2:
+        "FSG follikulning granular hujayalarini bo'linish va yetilishni jarayonida ishtirok etadi",
+      myoStep3:
+        "FSG follikulning granular hujayalarini bo'linish yetilishini jarayonida ishtirok etadi",
       dChiroTitle: "D-xiro-inozitol",
-      dChiroStep1: "To'qimalarning insulinga sezuvchanligini yaxshilaydi. Insulinorezistentlikni kamaytiradi",
-      dChiroStep2: "Glyukozani mitoxondriyalarga olib boradi va tanani energiya bilan ta'minlashda ishtirok etadi",
+      dChiroStep1:
+        "To'qimalarning insulinga sezuvchanligini yaxshilaydi. Insulinorezistentlikni kamaytiradi",
+      dChiroStep2:
+        "Glyukozani mitoxondriyalarga olib boradi va tanani energiya bilan ta'minlashda ishtirok etadi",
       dChiroStep3: "Steroid gormonlar ishlab chiqarilishini normallashtiradi",
     },
     whenToUse: {
@@ -129,7 +138,8 @@ export const translations = {
       a4: "Homiladorlik va emizish davrida foydalanishdan oldin shifokoringiz bilan maslahatlashish kerak.",
       q5: "Qanday saqlash kerak?",
       a5: "Mahsulotni harorati 25°C dan past, quruq joyda saqlang. Bolalardan uzoqda tuting.",
-      allInformationYouNeed: "INOZET MD haqida bilishingiz kerak bo'lgan barcha ma'lumotlar",
+      allInformationYouNeed:
+        "INOZET MD haqida bilishingiz kerak bo'lgan barcha ma'lumotlar",
     },
     contact: {
       title: "Bog'lanish",
@@ -143,7 +153,8 @@ export const translations = {
         "O'zbekiston Respublikasi Toshkent shahri Sergeli tumani, Sug'diyona MFY, Yangi Sergeli ko'chasi 11/5 uy 63-xonadon",
       callNow: "Hozir qo'ng'iroq qiling",
       instagramQrCode: "Instagram QR kod",
-      qrScanInstruction: "Instagram sahifamizga o'tish uchun QR-kodni skanerlang",
+      qrScanInstruction:
+        "Instagram sahifamizga o'tish uchun QR-kodni skanerlang",
     },
     phoneForm: {
       title: "Bepul konsultatsiya",
@@ -159,7 +170,8 @@ export const translations = {
       privacy: "Maxfiylik siyosati",
       terms: "Foydalanish shartlari",
       quickLinks: "Tezkor havolalar",
-      description: "Ayollar reproduktiv salomatligini qo'llab-quvvatlash uchun tabiiy va samarali yechim",
+      description:
+        "Ayollar reproduktiv salomatligini qo'llab-quvvatlash uchun tabiiy va samarali yechim",
       productHerbalab: "HERBALAB tomonidan ishlab chiqilgan",
     },
   },
@@ -220,9 +232,11 @@ export const translations = {
       title: "Key Ingredients",
       subtitle: "Scientifically proven ingredients",
       myoInositol: "Myo-inositol",
-      myoDesc: "Participates in transmitting follicle-stimulating hormone (FSH) signals to cells",
+      myoDesc:
+        "Participates in transmitting follicle-stimulating hormone (FSH) signals to cells",
       dChiro: "D-chiro-inositol",
-      dChiroDesc: "Transports glucose to mitochondria and participates in providing the body with energy",
+      dChiroDesc:
+        "Transports glucose to mitochondria and participates in providing the body with energy",
       metafolin: "Metafolin",
       metafolinDesc: "Normalizes the production of steroid hormones",
       mainBenefit: "Main Benefits",
@@ -234,12 +248,17 @@ export const translations = {
       title: "How Does It Work?",
       subtitle: "Scientific mechanism",
       myoTitle: "Myo-inositol",
-      myoStep1: "Participates in transmitting follicle-stimulating hormone (FSH) signals to cells",
-      myoStep2: "FSH participates in the division and maturation of follicular granular cells",
-      myoStep3: "FSH participates in the division and maturation of follicular granular cells",
+      myoStep1:
+        "Participates in transmitting follicle-stimulating hormone (FSH) signals to cells",
+      myoStep2:
+        "FSH participates in the division and maturation of follicular granular cells",
+      myoStep3:
+        "FSH participates in the division and maturation of follicular granular cells",
       dChiroTitle: "D-chiro-inositol",
-      dChiroStep1: "Improves tissue insulin sensitivity. Reduces insulin resistance",
-      dChiroStep2: "Transports glucose to mitochondria and provides the body with energy",
+      dChiroStep1:
+        "Improves tissue insulin sensitivity. Reduces insulin resistance",
+      dChiroStep2:
+        "Transports glucose to mitochondria and provides the body with energy",
       dChiroStep3: "Normalizes the production of steroid hormones",
     },
     whenToUse: {
@@ -291,7 +310,8 @@ export const translations = {
       a4: "Consult your doctor before use during pregnancy and breastfeeding.",
       q5: "How to store?",
       a5: "Store the product in a dry place at a temperature below 25°C. Keep out of reach of children.",
-      allInformationYouNeed: "All the information you need to know about INOZET MD",
+      allInformationYouNeed:
+        "All the information you need to know about INOZET MD",
     },
     contact: {
       title: "Contact Us",
@@ -321,7 +341,8 @@ export const translations = {
       privacy: "Privacy Policy",
       terms: "Terms of Use",
       quickLinks: "Quick Links",
-      description: "Natural and effective solution for supporting women's reproductive health",
+      description:
+        "Natural and effective solution for supporting women's reproductive health",
       productHerbalab: "Produced by HERBALAB",
     },
   },
@@ -372,7 +393,8 @@ export const translations = {
       menstrual: "Улучшает менструальный цикл",
       menstrualDesc: "Регулирует и нормализует менструальный цикл",
       healing: "Улучшает качество яйцеклеток",
-      healingDesc: "Повышает качество репродуктивных клеток и улучшает овуляцию",
+      healingDesc:
+        "Повышает качество репродуктивных клеток и улучшает овуляцию",
       health: "Увеличивает шанс рождения здорового ребенка",
       healthDesc: "Поддерживает процесс беременности",
       pregnancy: "Помогает быстрее забеременеть",
@@ -382,9 +404,11 @@ export const translations = {
       title: "Основные компоненты",
       subtitle: "Научно доказанные ингредиенты",
       myoInositol: "Мио-инозитол",
-      myoDesc: "Участвует в передаче сигналов фолликулостимулирующего гормона (ФСГ) клеткам",
+      myoDesc:
+        "Участвует в передаче сигналов фолликулостимулирующего гормона (ФСГ) клеткам",
       dChiro: "D-хиро-инозитол",
-      dChiroDesc: "Транспортирует глюкозу к митохондриям и участвует в обеспечении организма энергией",
+      dChiroDesc:
+        "Транспортирует глюкозу к митохондриям и участвует в обеспечении организма энергией",
       metafolin: "Метафолин",
       metafolinDesc: "Нормализует выработку стероидных гормонов",
       mainBenefit: "Основные преимущества",
@@ -396,12 +420,17 @@ export const translations = {
       title: "Как это работает?",
       subtitle: "Научный механизм",
       myoTitle: "Мио-инозитол",
-      myoStep1: "Участвует в передаче сигналов фолликулостимулирующего гормона (ФСГ) клеткам",
-      myoStep2: "ФСГ участвует в делении и созревании фолликулярных гранулярных клеток",
-      myoStep3: "ФСГ участвует в делении и созревании фолликулярных гранулярных клеток",
+      myoStep1:
+        "Участвует в передаче сигналов фолликулостимулирующего гормона (ФСГ) клеткам",
+      myoStep2:
+        "ФСГ участвует в делении и созревании фолликулярных гранулярных клеток",
+      myoStep3:
+        "ФСГ участвует в делении и созревании фолликулярных гранулярных клеток",
       dChiroTitle: "D-хиро-инозитол",
-      dChiroStep1: "Улучшает чувствительность тканей к инсулину. Снижает инсулинорезистентность",
-      dChiroStep2: "Транспортирует глюкозу к митохондриям и обеспечивает организм энергией",
+      dChiroStep1:
+        "Улучшает чувствительность тканей к инсулину. Снижает инсулинорезистентность",
+      dChiroStep2:
+        "Транспортирует глюкозу к митохондриям и обеспечивает организм энергией",
       dChiroStep3: "Нормализует выработку стероидных гормонов",
     },
     whenToUse: {
@@ -453,7 +482,8 @@ export const translations = {
       a4: "Перед применением во время беременности и грудного вскармливания проконсультируйтесь с врачом.",
       q5: "Как хранить?",
       a5: "Храните продукт в сухом месте при температуре ниже 25°C. Беречь от детей.",
-      allInformationYouNeed: "Вся информация, которую вам нужно знать о INOZET MD",
+      allInformationYouNeed:
+        "Вся информация, которую вам нужно знать о INOZET MD",
     },
     contact: {
       title: "Связаться с нами",
@@ -467,7 +497,8 @@ export const translations = {
         "Республика Узбекистан, город Ташкент, Сергелийский район, МФЙ Сугдиёна, улица Янги Сергели 11/5, квартира 63",
       callNow: "Позвонить сейчас",
       instagramQrCode: "Instagram QR код",
-      qrScanInstruction: "Сканируйте QR-код, чтобы перейти на нашу страницу в Instagram",
+      qrScanInstruction:
+        "Сканируйте QR-код, чтобы перейти на нашу страницу в Instagram",
     },
     phoneForm: {
       title: "Бесплатная консультация",
@@ -483,12 +514,13 @@ export const translations = {
       privacy: "Политика конфиденциальности",
       terms: "Условия использования",
       quickLinks: "Быстрые ссылки",
-      description: "Натуральное и эффективное решение для поддержки репродуктивного здоровья женщин",
+      description:
+        "Натуральное и эффективное решение для поддержки репродуктивного здоровья женщин",
       productHerbalab: "Произведено HERBALAB",
     },
   },
-}
+};
 
 export function getTranslation(locale: Locale) {
-  return translations[locale]
+  return translations[locale];
 }

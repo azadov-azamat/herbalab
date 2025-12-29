@@ -1,4 +1,4 @@
-export type Locale = "uz" | "en" | "ru"
+export type Locale = "uz" | "en" | "ru";
 
 export const translations = {
   uz: {
@@ -49,14 +49,15 @@ export const translations = {
       q1: "Laktavia ni qanday qabul qilish kerak?",
       a1: "Kuniga 1–2 kapsula. Bolalar 0 yoshdan kuniga 1 kapsula",
       q2: "Natija qachon ko'rinadi?",
-      a2: "Ko'pchilik ayollar 2-3 oy ichida yaxshilanishni sezadilar. To'liq natijalar uchun 3-6 oy qabul qilish tavsiya etiladi.",
+      a2: "Ko'pchilik ayollar 10-20 kunda yaxshi natija olishgan",
       q3: "Yon ta'siri bormi?",
-      a3: "Laktavia tabiiy ingredientlardan iborat va yaxshi tolere qilinadi. Juda kam hollarda oshqozon bezovtaligi mumkin.",
+      a3: "Laktavia tabiiy ingredientlardan iborat. Juda kam hollarda oshqozon bezovtaligi mumkin.",
       q4: "Homiladorlik davrida qabul qilish mumkinmi?",
       a4: "Homiladorlik va emizish davrida foydalanishdan oldin shifokoringiz bilan maslahatlashish kerak.",
       q5: "Qanday saqlash kerak?",
       a5: "Mahsulotni harorati 25°C dan past, quruq joyda saqlang. Bolalardan uzoqda tuting.",
-      allInformationYouNeed: "Laktavia haqida bilishingiz kerak bo'lgan barcha ma'lumotlar",
+      allInformationYouNeed:
+        "Laktavia haqida bilishingiz kerak bo'lgan barcha ma'lumotlar",
     },
     contact: {
       title: "Bog'lanish",
@@ -70,7 +71,8 @@ export const translations = {
         "O'zbekiston Respublikasi Toshkent shahri Sergeli tumani, Sug'diyona MFY, Yangi Sergeli ko'chasi 11/5 uy 63-xonadon",
       callNow: "Hozir qo'ng'iroq qiling",
       instagramQrCode: "Instagram QR kod",
-      qrScanInstruction: "Instagram sahifamizga o'tish uchun QR-kodni skanerlang",
+      qrScanInstruction:
+        "Instagram sahifamizga o'tish uchun QR-kodni skanerlang",
     },
     phoneForm: {
       title: "Bepul konsultatsiya",
@@ -86,7 +88,8 @@ export const translations = {
       privacy: "Maxfiylik siyosati",
       terms: "Foydalanish shartlari",
       quickLinks: "Tezkor havolalar",
-      description: "Ichak mikroflorasini tiklaydi va immunitetni mustahkamlaydi",
+      description:
+        "Ichak mikroflorasini tiklaydi va immunitetni mustahkamlaydi",
       productHerbalab: "HERBALAB tomonidan ishlab chiqilgan",
     },
     laktaviaPreview: {
@@ -121,11 +124,13 @@ export const translations = {
       benefit1Title: "Ichak mikroflorasini tiklaydi",
       benefit1Desc: "Butun organizmni yengillashtiriladi",
       benefit2Title: "Ovqat hazm qilishni yaxshilaydi",
-      benefit2Desc: "Shishish, og'irlik, ich qotishi va ich ketishida yordam beradi",
+      benefit2Desc:
+        "Qorindagi gazlar, og'irlik, ich qotishi va ich ketishida yordam beradi",
       benefit3Title: "Immunitetni kuchaytiradi",
-      benefit3Desc: "Kuz, qish va bahorda organizmni himoya qiladi",
+      benefit3Desc: "Barcha mavsumlarda organizmni himoya qiladi",
       benefit4Title: "Allergiya belgilarini kamaytiradi",
-      benefit4Desc: "Teri toshmalar, ovqat allergiyasi va atopik dermatitida yordam beradi",
+      benefit4Desc:
+        "Teri toshmalar, ovqat allergiyasi va atopik dermatitida yordam beradi",
       whenToUseTitle: "Qachon qabul qilish tavsiya etiladi?",
       use1: "Antibiotiklar qabul qilgandan keyin",
       use2: "Ovqat hazm qilish buzilganda va ich qotishida",
@@ -191,7 +196,8 @@ export const translations = {
       a4: "Consult your doctor before use during pregnancy and breastfeeding.",
       q5: "How to store?",
       a5: "Store the product in a dry place at a temperature below 25°C. Keep out of reach of children.",
-      allInformationYouNeed: "All the information you need to know about Laktavia",
+      allInformationYouNeed:
+        "All the information you need to know about Laktavia",
     },
     contact: {
       title: "Contact Us",
@@ -250,7 +256,8 @@ export const translations = {
       zincAmount: "10mg",
       oligosaccharide: "Oligosaccharide - maltodextrin",
       dosageTitle: "Dosage",
-      dosage: "1–2 capsules per day. Children from 0 years old 1 capsule per day",
+      dosage:
+        "1–2 capsules per day. Children from 0 years old 1 capsule per day",
       packageInfo: "20 capsules × 500 mg",
       benefitsTitle: "Key Benefits",
       benefit1Title: "Restores intestinal microflora",
@@ -260,7 +267,8 @@ export const translations = {
       benefit3Title: "Strengthens immunity",
       benefit3Desc: "Protects the body in autumn, winter and spring",
       benefit4Title: "Reduces allergy symptoms",
-      benefit4Desc: "Helps with skin rashes, food allergies and atopic dermatitis",
+      benefit4Desc:
+        "Helps with skin rashes, food allergies and atopic dermatitis",
       whenToUseTitle: "When is it recommended to take?",
       use1: "After taking antibiotics",
       use2: "When digestion is disturbed and constipation",
@@ -326,7 +334,8 @@ export const translations = {
       a4: "Перед применением во время беременности и грудного вскармливания проконсультируйтесь с врачом.",
       q5: "Как хранить?",
       a5: "Храните продукт в сухом месте при температуре ниже 25°C. Беречь от детей.",
-      allInformationYouNeed: "Вся информация, которую вам нужно знать о Laktavia",
+      allInformationYouNeed:
+        "Вся информация, которую вам нужно знать о Laktavia",
     },
     contact: {
       title: "Связаться с нами",
@@ -340,7 +349,8 @@ export const translations = {
         "Республика Узбекистан, город Ташкент, Сергелийский район, МФЙ Сугдиёна, улица Янги Сергели 11/5, квартира 63",
       callNow: "Позвонить сейчас",
       instagramQrCode: "Instagram QR код",
-      qrScanInstruction: "Сканируйте QR-код, чтобы перейти на нашу страницу в Instagram",
+      qrScanInstruction:
+        "Сканируйте QR-код, чтобы перейти на нашу страницу в Instagram",
     },
     phoneForm: {
       title: "Бесплатная консультация",
@@ -395,7 +405,8 @@ export const translations = {
       benefit3Title: "Укрепляет иммунитет",
       benefit3Desc: "Защищает организм осенью, зимой и весной",
       benefit4Title: "Снижает симптомы аллергии",
-      benefit4Desc: "Помогает при кожных высыпаниях, пищевой аллергии и атопическом дерматите",
+      benefit4Desc:
+        "Помогает при кожных высыпаниях, пищевой аллергии и атопическом дерматите",
       whenToUseTitle: "Когда рекомендуется принимать?",
       use1: "После приема антибиотиков",
       use2: "При нарушении пищеварения и запорах",
@@ -404,8 +415,8 @@ export const translations = {
       use5: "Для укрепления иммунитета",
     },
   },
-}
+};
 
 export function getTranslation(locale: Locale) {
-  return translations[locale]
+  return translations[locale];
 }
