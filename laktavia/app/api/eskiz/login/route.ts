@@ -1,5 +1,5 @@
-import { NextResponse } from "next/server"
 import { eskizLogin } from "@/lib/eskiz"
+import { NextResponse } from "next/server"
 
 export async function GET() {
   try {
@@ -9,3 +9,5 @@ export async function GET() {
     return NextResponse.json({ success: false, error: e.message }, { status: 500 })
   }
 }
+
+// added comment about this file

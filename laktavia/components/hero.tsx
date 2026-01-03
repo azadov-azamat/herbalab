@@ -72,7 +72,7 @@ export function Hero() {
           <div className="relative animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
             <div className="relative w-full aspect-square max-w-lg mx-auto">
               <Image
-                src="/images/img-20251220-173212-939.jpg"
+                src="/images/hero.JPG"
                 alt="Laktavia - Ichak va immunitet uchun probiotik"
                 fill
                 className="object-contain drop-shadow-2xl"
